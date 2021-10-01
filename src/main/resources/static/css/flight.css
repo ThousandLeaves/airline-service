@@ -1,0 +1,126 @@
+
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#search-form {
+	border: 1px solid grey;
+	justify-content: center;
+	width: 700px;
+	position: relative;
+}
+
+#header {
+	height: 80px;
+	background: lightgreen;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#header h1 {
+	color: black;
+	font-size: 1.3em
+}
+
+.flight {
+	padding: 60px;
+	margin: auto;
+	width: 700px;
+}
+
+.flight input, select {
+	color: black;
+}
+
+.info-box {
+	padding: 10px 0;
+	margin-top: 10px;
+	flex: 1;
+	border-right: 20px solid transparent;
+}
+
+.info-box input[type=text], input[type=submit], select {
+	background: lightcyan;
+	margin-top: 10px;
+	width: 100%;
+	padding: 25px;
+	height: 40px;
+	border-radius: 3px;
+}
+
+#flight-type {
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 1px dotted grey;
+}
+
+#flight-type .info-box {
+	flex: 0 1 25%;
+	display: flex;
+	align-items: center;
+}
+
+#flight-depart {
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dotted silver;
+}
+
+#flight-dates {
+	display: flex;
+	border-bottom: 1px dotted silver;
+}
+
+#flight-info {
+	display: flex;
+	border-bottom: 1px dotted silver;
+}
+
+#flight-search input[type=submit] {
+	background: lightgreen;
+	color: Black;
+	padding: 0;
+	height: 50px;
+	font-size: 1.2em;
+}
+
+/*booking page---- */
+.form-row {
+	color: black;
+	display: flex;
+	justify-content: flex-start;
+	padding: 4%;
+}
+
+.form-group {
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dotted silver;
+	padding: 4%;
+}
+
+#booking-form {
+	border: 1px solid grey;
+	width: 700px;
+	position: relative;
+}
+
+#booking-now input[type=submit] {
+	background: lightgreen;
+	color: Black;
+	padding: 0;
+	height: 50px;
+	font-size: 1.2em;
+}
+.footer_fix {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;}

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header :: copy"></head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="filesearch.css">
+    <meta charset="utf-8">
+    
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Flight Booking</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Hotels</a>
+                            <a class="nav-link" href="#">Cars</a>
+                            <a class="nav-link" href="#">Packages</a>
+                        </div>
+                    </div>
+                    <span>
+                        <form class="container-fluid justify-content-start">
+                            <button class="btn btn-sm btn-light" type="button">Login</button>
+                            <button class="btn btn-sm btn-light" type="button">Sign Up</button>                        
+                        </form>
+                    </span>
+            </div>
+        </nav>
+
+
+
+
+
+
+<body>
+	<section>
+		<div class="flight" id="flightbox">
+
+			<form id="search-form">
+				<div id="flight-type">
+					<div class="info-box">
+						<input type="radio" name="flight-type" value="round-trip"
+							id="round-trip" checked /> <label for="round-trip">Round
+							trip</label>
+					</div>
+					<div class="info-box">
+						<input type="radio" name="flight-type" value="Single" id="one-way" />
+						<label for="one-way">One way</label>
+					</div>
+
+				</div>
+				<div id="flight-depart">
+					<div class="info-box">
+						<label for="">Leaving from:</label> <input type="text"
+							id="dep-from" />
+						<div id="depart-res"></div>
+					</div>
+					<div class="info-box" id="arrive-box">
+						<label for="">Arriving at:</label> <input type="text" id="dep-to" />
+						<div id="arrive-res"></div>
+					</div>
+				</div>
+
+				<div id="flight-dates">
+					<div class="info-box">
+						<label for="">Departure date:</label> <input type="date"
+							id="leave-date" />
+					</div>
+					<div class="info-box" id="return-box">
+						<label for="">Return date:</label> <input type="date"
+							id="return-date"  />
+					</div>
+				</div>
+
+				<div id="flight-info">
+					<div class="info-box">
+						<label for="adults">Adults:</label> <select name="adults"
+							id="adults">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+
+
+					</div>
+					<div class="info-box">
+						<label for="children">Children:</label> <select name="children"
+							id="children">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+
+
+					</div>
+					<div class="info-box">
+						<label for="class-type">Class:</label> <select name="class-type"
+							id="class-type">
+							<option value="First">First Class</option>
+							<option value="Business">Business</option>
+							<option value="Economy">Economy</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="flight-search">
+					<div class="info-box">
+
+						<input type="submit" id="search-flight" value="SEARCH" />
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</section>
+	<div th:replace="footer :: copy"></div>
+
+
+	<footer class="footer mt-auto py-3 bg-light">
+            <div class="container text-center">
+                <span class="text-muted">©2021 CST438 Group 5. All rights reserved.</span>
+            </div>
+          </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" async defer crossorigin="anonymous"></script>
+        <script src="" async defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

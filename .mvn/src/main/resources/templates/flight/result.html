@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="flight/header :: copy"></head>
+<body>
+<main class="flex-shrink-0">
+		<div class="container overflow-hidden">
+		<span>Search Again? <a href="/" th:href="@{/flight}">Search Here</a></span>
+			<br /> <br />
+			
+    <h3> Below is your flight summary. Please select your desired flight.</h3>
+    
+    <table border="1px solid black;" class="table table-striped table-responsive-md"
+                   style="align-items: center; text-align: center;">
+
+                <thead class="top">
+                <tr class="table-info">
+                    <td><b>Flight No:</b></td>
+                    <td><b>Airline ID</b></td>
+                    <td><b>Departure Date</b></td>
+                    <td><b>Departure Time</b></td>
+                    <td><b>Arrival Date</b></td>
+                    <td><b>Arrival Time</b></td>
+                    <td><b>Number of Stops</b></td>
+                     <td><b>Available Seats</b></td>
+                     <td><b>Origin City</b></td>
+                    <td><b>Origin Airport</b></td>
+                    <td><b>Destination City</b></td>
+                    <td><b>Destination Airport</b></td>
+                    <td><b>Total Price</b></td>
+                    <td><b>Actions</b></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="flight: ${searchFlights}">
+                    <td th:text="${flight.flightNum}" width="20px"></td>
+                    <td th:text="${flight.airlineID}"></td>
+                    <td th:text="${flight.leaveDate}"></td>
+                    <td th:text="${flight.leaveTime}"></td>
+                    <td th:text="${flight.arriveDate}"></td>
+                    <td th:text="${flight.arriveTime}"></td>
+                    <td th:text="${flight.numStops}"></td>
+                    <td th:text="${flight.seatsAvailable}"></td>  
+                    <td th:text="${flight.originCity}"></td>
+                    <td th:text="${flight.originAirport}"></td>
+                    <td th:text="${flight.destCity}"></td>
+                    <td th:text="${flight.destAirport}"></td>
+                    <td th:text="${flight.price}"></td>
+                   <td><a th:href="@{/flight}"
+						class="btn btn-primary">Select</a></td>
+                </tbody>
+            </table>
+    
+    
+					</div>
+	</main>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+    <div th:replace="flight/footer :: copy"></div>
+</body>
+</html>
+
+
+
